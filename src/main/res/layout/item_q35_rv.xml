@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+    >
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@mipmap/icon_co2"
+        />
+
+    <TextView
+        android:id="@+id/tv_co"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5915ppm"
+        />
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@mipmap/icon_temprature"
+        />
+
+    <TextView
+        android:id="@+id/tv_weather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5915ppm"
+        />
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@mipmap/sun"
+        />
+
+    <TextView
+        android:id="@+id/tv_sun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="156ss"
+        />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2018.9.9 11:23:11"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="30dp"
+        />
+
+</LinearLayout>

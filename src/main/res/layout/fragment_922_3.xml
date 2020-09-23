@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp">
+
+        <TextView
+            android:id="@+id/tv_shijian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2020年2月1日"
+            android:clickable="true"
+            android:textSize="16pt" />
+
+        <TextView
+            android:id="@+id/tv_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:text="最近更新时间：5分钟"
+            android:textSize="16pt" />
+    </LinearLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/piechat"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="50dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/gv_zhishu"
+            app:layout_constraintTop_toTopOf="parent"></com.github.mikephil.charting.charts.PieChart>
+
+        <GridView
+            android:id="@+id/gv_zhishu"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="60dp"
+            android:numColumns="4"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+</LinearLayout>

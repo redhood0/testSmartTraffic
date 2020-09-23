@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/tv_month"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:text="2020年11月"
+        android:textSize="40dp"
+        ></TextView>
+    <com.haibin.calendarview.CalendarView
+        android:id="@+id/calandar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:scheme_text="11111"
+        app:week_background="@color/Red"
+        app:day_text_size="30dp"
+        >
+    </com.haibin.calendarview.CalendarView>
+    <!--        app:week_view="com.haibin.calendarview.MultiMonthView"-->
+    <!--        app:month_view="com.haibin.calendarview.MultiMonthView"-->
+
+<!--    <com.haibin.calendarview.MultiMonthView-->
+<!--    <com.haibin.calendarview.MultiWeekView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        ></com.haibin.calendarview.MultiWeekView>-->
+
+<!--    <CalendarView-->
+<!--        android:id="@+id/calandar2"-->
+<!--        android:layout_width="500dp"-->
+<!--        android:layout_height="500dp"/>-->
+
+
+</LinearLayout>

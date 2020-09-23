@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/background"
+        android:scaleType="fitStart"
+        android:layout_marginLeft="50dp"
+        />
+
+    <TextView
+        android:id="@+id/road1"
+        android:layout_width="500dp"
+        android:layout_height="30dp"
+        android:background="@color/Blue"
+        app:layout_constraintTop_toTopOf="@+id/map"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="40dp"
+        android:text="学院路"
+        android:textAlignment="center"
+        android:gravity="center_vertical"
+        />
+
+    <TextView
+        android:id="@+id/data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2020-2-2\n星期三"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="300dp"
+        android:layout_marginTop="100dp"
+        android:textSize="30dp"
+        />
+
+    <ImageView
+        app:layout_constraintTop_toBottomOf="@+id/data"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="150dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@mipmap/jiaojing1_1"
+        />
+
+    <ImageView
+        app:layout_constraintTop_toBottomOf="@+id/data"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="150dp"
+        android:layout_marginTop="150dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@mipmap/jiaojing2_1"
+        />
+
+</android.support.constraint.ConstraintLayout>

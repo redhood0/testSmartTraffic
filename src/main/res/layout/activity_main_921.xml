@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--            <include layout="@layout/dinglan"></include>-->
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include layout="@layout/dinglan"></include>
+
+            <LinearLayout
+                android:id="@+id/fragment_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="80dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toTopOf="@+id/ll_2"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <!--                <Button-->
+                <!--                    android:id="@+id/btn1"-->
+                <!--                    android:layout_width="50dp"-->
+                <!--                    android:layout_height="30dp"-->
+                <!--                    android:text="1"></Button>-->
+                <!--                <Button-->
+                <!--                    android:id="@+id/btn2"-->
+                <!--                    android:layout_width="50dp"-->
+                <!--                    android:layout_height="30dp"-->
+                <!--                    android:text="2"></Button>-->
+                <!--                <Button-->
+                <!--                    android:id="@+id/btn3"-->
+                <!--                    android:layout_width="50dp"-->
+                <!--                    android:layout_height="30dp"-->
+                <!--                    android:text="3"></Button>-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_2"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fragment_container">
+
+                <Button
+                    android:id="@+id/btn1"
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:text="back"></Button>
+
+                <Button
+                    android:id="@+id/btn2"
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:text="2"></Button>
+
+                <Button
+                    android:id="@+id/btn3"
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:text="3"></Button>
+                <Button
+                    android:id="@+id/btn4"
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:text="4"></Button>
+                <Button
+                    android:id="@+id/btn5"
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:text="5"></Button>
+
+            </LinearLayout>
+        </android.support.constraint.ConstraintLayout>
+
+        <!--        <android.support.design.widget.CoordinatorLayout-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="match_parent">-->
+        <!--            <include layout="@layout/dinglan"></include>-->
+        <!--            -->
+        <!--            <android.support.v4.widget.NestedScrollView-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="match_parent"-->
+        <!--                app:layout_behavior="@string/appbar_scrolling_view_behavior"-->
+        <!--                >-->
+        <!--                <Button-->
+        <!--                    android:layout_width="40dp"-->
+        <!--                    android:layout_height="40dp"/>-->
+        <!--            </android.support.v4.widget.NestedScrollView>-->
+        <!--            -->
+        <!--        </android.support.design.widget.CoordinatorLayout>-->
+
+
+        <android.support.design.widget.NavigationView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            app:headerLayout="@layout/nav_header_main"
+            app:menu="@menu/nav_menu"></android.support.design.widget.NavigationView>
+    </android.support.v4.widget.DrawerLayout>
+
+
+</android.support.constraint.ConstraintLayout>

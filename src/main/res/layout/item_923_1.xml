@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ddd"
+android:id="@+id/hs"
+
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="left"
+        >
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/cl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+            <ImageView
+                android:id="@+id/iv_touxiang"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="30dp"
+                android:src="@mipmap/touxiang_1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="用户名：xxx"
+                app:layout_constraintLeft_toRightOf="@+id/iv_touxiang"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="姓名：xxx"
+                app:layout_constraintLeft_toRightOf="@+id/iv_touxiang"
+                app:layout_constraintTop_toBottomOf="@+id/tv_username" />
+
+            <TextView
+                android:id="@+id/tv_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="电话：13804110001"
+                app:layout_constraintLeft_toRightOf="@+id/iv_touxiang"
+                app:layout_constraintTop_toBottomOf="@+id/tv_name" />
+
+            <TextView
+                android:id="@+id/tv_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/Yellow"
+                android:padding="10dp"
+                android:text="一般管理员"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </android.support.constraint.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:background="@color/Red">
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="收藏"
+                android:gravity="center_horizontal|center_vertical"
+                android:background="@color/Blue"
+                />
+            <TextView
+                android:id="@+id/delete"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="删除"
+                android:gravity="center_horizontal|center_vertical"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</HorizontalScrollView>
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+
+
+<!--    android:background="#ddd"-->
+<!--    android:fillViewport="true"-->
+<!--    android:focusable="true"-->
+<!--    android:focusableInTouchMode="true"-->
+<!--    >-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_gravity="left"-->
+<!--        android:background="@drawable/normal_border"-->
+<!--        android:orientation="horizontal">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content">-->
+<!--            <ImageView-->
+<!--                android:layout_width="100dp"-->
+<!--                android:layout_height="100dp"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:layout_marginBottom="20dp"-->
+<!--                android:src="@mipmap/avatar"></ImageView>-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/name"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_gravity="center_vertical"-->
+<!--                android:gravity="center_vertical"-->
+<!--                android:text="用户名：xxx" />-->
+<!--        </LinearLayout>-->
+
+
+
+<!--        <TextView-->
+<!--            android:id="@+id/delete"-->
+<!--            android:layout_width="200dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:text="删除"-->
+<!--            android:background="@color/Red"-->
+<!--            ></TextView>-->
+
+
+<!--    </LinearLayout>-->
+
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:layout_gravity="left"-->
+<!--        >-->
+
+<!--        <android.support.constraint.ConstraintLayout-->
+<!--            android:id="@+id/cl"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:padding="20dp">-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/iv_touxiang"-->
+<!--                android:layout_width="100dp"-->
+<!--                android:layout_height="100dp"-->
+<!--                android:layout_marginLeft="30dp"-->
+<!--                android:src="@mipmap/touxiang_1"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintLeft_toLeftOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/name"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="用户名：xxx"-->
+<!--                app:layout_constraintLeft_toRightOf="@+id/iv_touxiang"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tv_name"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:text="姓名：xxx"-->
+<!--                app:layout_constraintLeft_toRightOf="@+id/iv_touxiang"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/tv_username" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tv_phone"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:text="电话：13804110001"-->
+<!--                app:layout_constraintLeft_toRightOf="@+id/iv_touxiang"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/tv_name" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tv_type"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="@color/Yellow"-->
+<!--                android:padding="10dp"-->
+<!--                android:text="一般管理员"-->
+<!--                app:layout_constraintRight_toRightOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
+<!--        </android.support.constraint.ConstraintLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="200dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:background="@color/Red">-->
+<!--            <TextView-->
+<!--                android:id="@+id/tv_save"-->
+<!--                android:layout_width="100dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:text="收藏"-->
+<!--                android:gravity="center_horizontal|center_vertical"-->
+<!--                android:background="@color/Blue"-->
+<!--                />-->
+<!--            <TextView-->
+<!--                android:id="@+id/delete"-->
+<!--                android:layout_width="100dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:text="删除"-->
+<!--                android:gravity="center_horizontal|center_vertical"-->
+<!--                />-->
+
+<!--        </LinearLayout>-->
+
+<!--    </LinearLayout>-->
+
+
+<!--</HorizontalScrollView>-->
+

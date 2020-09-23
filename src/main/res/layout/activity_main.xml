@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+    <!--<LinearLayout-->
+    <!--    android:layout_width="match_parent"-->
+    <!--    android:layout_height="match_parent"-->
+    <!--    android:orientation="vertical"-->
+    <!--    >-->
+    <!--    <include layout="@layout/toolbar_main" />-->
+
+
+    <!--    <include layout="@layout/container" />-->
+
+
+    <!--    <android.support.design.widget.BottomNavigationView-->
+    <!--        android:id="@+id/bottom_navigation"-->
+    <!--        style="@style/Widget.Design.BottomNavigationView"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_alignParentBottom="true"-->
+    <!--        android:layout_gravity="bottom"-->
+    <!--        android:background="@color/viewBackground"-->
+    <!--        app:elevation="16dp"-->
+    <!--        app:itemIconTint="@drawable/nav_item_color_state"-->
+    <!--        app:itemTextColor="@drawable/nav_item_color_state"-->
+    <!--        app:layout_behavior="com.lenovo.smarttraffic.view.BottomNavigationBehavior"-->
+    <!--        app:menu="@menu/bottom_navigation_main" />-->
+    <!--</LinearLayout>-->
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+                <include layout="@layout/toolbar_main" android:visibility="gone"/>
+                <android.support.design.widget.AppBarLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <android.support.v7.widget.Toolbar
+                        android:layout_width="match_parent"
+                        app:layout_scrollFlags="scroll|enterAlways"
+                        android:layout_height="?attr/actionBarSize"/>
+                </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/Blue"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+           >
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:background="@color/Red"-->
+<!--                android:layout_height="match_parent">-->
+<!--                -->
+<!--        </LinearLayout>-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="22222222222"
+                android:textSize="40dp"
+                />
+        </android.support.v4.widget.NestedScrollView>
+<!--        <include layout="@layout/fragment_home"/>-->
+
+<!--        <android.support.v4.widget.NestedScrollView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:background="#aaa"-->
+<!--            android:visibility="gone"-->
+<!--            app:layout_behavior="@string/appbar_scrolling_view_behavior"-->
+<!--            >-->
+            <include
+                layout="@layout/container"
+                android:visibility="gone" />
+
+<!--        </android.support.v4.widget.NestedScrollView>-->
+
+        <android.support.design.widget.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            style="@style/Widget.Design.BottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:background="@color/viewBackground"
+            app:elevation="16dp"
+            app:itemIconTint="@drawable/nav_item_color_state"
+            app:itemTextColor="@drawable/nav_item_color_state"
+            app:layout_behavior=".view.BottomNavigationBehavior"
+            app:menu="@menu/bottom_navigation_main" />
+    </android.support.design.widget.CoordinatorLayout>
+    <!--侧滑布局控件-->
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        app:headerLayout="@layout/nav_header_main"
+        app:menu="@menu/nav_menu" />
+
+</android.support.v4.widget.DrawerLayout><!--必须设置layout_gravity属性-->

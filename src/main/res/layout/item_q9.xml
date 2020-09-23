@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:background="@drawable/normal_border"
+    android:gravity="center_vertical"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tv_id"
+        android:text="1"
+        android:layout_marginLeft="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/chepai"
+        android:layout_marginLeft="30dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@mipmap/benchi"/>
+     <TextView
+         android:id="@+id/tv_chepai"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="辽A10001"
+         android:layout_marginLeft="20dp"
+         />
+    <TextView
+        android:id="@+id/tv_yue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="余额：100元"
+        android:layout_marginLeft="120dp"
+        />
+    <CheckBox
+        android:id="@+id/cb"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/chongzhi"
+        android:layout_marginLeft="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="充值"
+        />
+</LinearLayout>

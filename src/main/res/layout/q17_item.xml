@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:id="@+id/cl"
+    android:layout_margin="10dp"
+    android:background="#B2C6FF"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@mipmap/sun"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+    <TextView
+        android:id="@+id/titel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="紫外线指数"
+        app:layout_constraintTop_toBottomOf="@+id/icon"
+        app:layout_constraintBottom_toBottomOf="@+id/icon"
+        app:layout_constraintLeft_toLeftOf="@+id/icon"
+
+        />
+
+    <TextView
+        android:id="@+id/content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/icon"
+        android:layout_marginLeft="40dp"
+        android:layout_width="wrap_content"
+        android:text="中等（100）"
+        android:textSize="20dp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="0dp"
+        android:maxLines="2"
+        android:lines="2"
+        android:ellipsize="end"
+        android:layout_height="wrap_content"
+        android:text="我是描述xxxxxxxxxxxxxxxxxxxxxxxxxx"
+        app:layout_constraintTop_toBottomOf="@+id/content"
+        app:layout_constraintLeft_toLeftOf="@+id/content"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/White"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+</android.support.constraint.ConstraintLayout>

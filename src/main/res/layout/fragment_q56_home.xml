@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+<!--    <include layout="@layout/toolbar_main"/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:background="#4A74BE"
+        android:gravity="center_horizontal">
+
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:background="#5F5E5E"
+            android:hint="请输入公交车线路"
+            android:inputType="number"
+            android:padding="20dp"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:lines="1"
+            android:imeOptions="actionDone"
+            android:textColor="@color/White"
+            android:textColorHint="@color/White" />
+
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查询" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="搜索历史"
+        android:textColor="@color/Black"
+        android:textSize="20dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000" />
+
+    <LinearLayout
+        android:id="@+id/ll_history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:visibility="invisible"
+
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_history"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="1路（xxxxxxxx）"
+            android:textColor="@color/Black"
+            android:textSize="20dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000" />
+
+        <TextView
+            android:id="@+id/tv_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="清空搜索历史"
+            android:textColor="#ccc"
+            android:textSize="20dp" />
+    </LinearLayout>
+</LinearLayout>

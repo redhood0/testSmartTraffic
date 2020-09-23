@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    >
+    <include layout="@layout/toolbar_main"></include>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="红绿灯信息管理"
+        android:textSize="60dp"
+        android:layout_marginLeft="30dp"
+        ></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="30dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:text="排序"
+            />
+
+        <Spinner
+            android:id="@+id/spinner_lukou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="400dp"
+            android:dropDownWidth="400dp"
+            android:minHeight="50dp"
+            ></Spinner>
+
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:text="查询"/>
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/gv_tflight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:numColumns="4"
+        android:background="#999999"
+        android:horizontalSpacing="1dp"
+        android:verticalSpacing="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:clickable="false"
+        android:layout_marginTop="30dp"
+        ></GridView>
+
+</LinearLayout>

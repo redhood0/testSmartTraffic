@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/lukou"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="1"
+        android:background="@drawable/normal_border"
+        />
+    <TextView
+        android:id="@+id/red"
+
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="红灯时长"
+        android:background="@drawable/normal_border"
+        />
+    <TextView
+        android:id="@+id/green"
+
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="绿灯时长"
+        android:background="@drawable/normal_border"
+        />
+    <TextView
+        android:id="@+id/yellow"
+
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="黄灯时长"
+        android:background="@drawable/normal_border"
+        />
+    <CheckBox
+        android:id="@+id/cb"
+        android:layout_height="match_parent"
+        android:layout_width="140dp"
+        android:background="@drawable/normal_border"
+/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:background="@drawable/normal_border"
+        >
+        <Button
+            android:id="@+id/btn_set"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="设置"
+            />
+
+    </LinearLayout>
+</LinearLayout>

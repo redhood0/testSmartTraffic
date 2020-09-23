@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <include layout="@layout/toolbar_main"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="最新\n公告"
+            android:textSize="40dp"
+            android:lines="2"
+            />
+        <RelativeLayout
+            android:layout_width="80dp"
+            android:layout_height="80dp">
+            <ImageView
+                android:id="@+id/sound1"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@mipmap/sound_1"
+                android:visibility="gone"
+                />
+            <ImageView
+                android:id="@+id/sound2"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@mipmap/sound_2"
+                android:visibility="visible"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="800dp"
+            android:layout_marginLeft="30dp"
+            android:layout_height="wrap_content"
+            android:text="省海高速胶州、莱西服务器封闭施工通知"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:textSize="60dp"
+            android:singleLine="true" />
+
+    </LinearLayout>
+    <View android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/Black"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            >
+            <ImageView
+                android:id="@+id/iv_zhongchi"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@mipmap/icon_chongzhi"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ETC充值"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            >
+            <ImageView
+                android:id="@+id/iv_yue"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@mipmap/icon_yue"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ETC余额"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            >
+            <ImageView
+                android:id="@+id/iv_jilu"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@mipmap/icon_history"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="充值历史"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

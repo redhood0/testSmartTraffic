@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@mipmap/login">
+
+    <include layout="@layout/toolbar_main"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="150dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:paddingLeft="100dp"
+        android:paddingRight="100dp"
+        android:gravity="center_horizontal"
+        >
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textinput1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+            <EditText
+                android:id="@+id/et1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="请输入用户名"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:imeOptions="actionNext"
+                ></EditText>
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textinput2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+            <EditText
+                android:id="@+id/et2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="请输入邮箱"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:imeOptions="actionNext"
+                ></EditText>
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textinput3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+            <EditText
+                android:id="@+id/et3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="请输入密码"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:imeOptions="actionNext"
+                ></EditText>
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textinput4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+            <EditText
+                android:id="@+id/et4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="请输入密码"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:imeOptions="actionDone"
+                ></EditText>
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="提交"
+            />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

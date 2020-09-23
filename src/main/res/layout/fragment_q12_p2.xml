@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:gravity="center_horizontal"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="300dp"
+            android:src="@mipmap/weizhang01"
+            android:layout_marginRight="20dp"
+            android:layout_height="250dp"/>
+        <ImageView
+            android:layout_width="300dp"
+            android:src="@mipmap/weizhang02"
+            android:layout_height="250dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="300dp"
+            android:src="@mipmap/weizhang03"
+            android:layout_marginRight="20dp"
+            android:layout_height="250dp"/>
+        <ImageView
+            android:layout_width="300dp"
+            android:src="@mipmap/weizhang04"
+            android:layout_height="250dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="返回"
+        />
+
+</LinearLayout>

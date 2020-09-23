@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:src="@mipmap/car1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30dp"
+        />
+    <TextView
+        android:id="@+id/tv_carnum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1号"
+        android:layout_marginLeft="20dp"
+        />
+    <TextView
+        android:id="@+id/tv_humans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="101"
+        android:layout_marginLeft="20dp"
+
+        />
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5分钟到达"
+        android:layout_marginLeft="70dp"
+
+        />
+    <TextView
+        android:id="@+id/tv_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="距离目标100米"
+        android:layout_marginLeft="120dp"
+
+        />
+</LinearLayout>

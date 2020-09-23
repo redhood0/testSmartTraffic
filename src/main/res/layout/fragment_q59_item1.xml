@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="#cccccc"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="车牌号：鲁"
+            />
+        <EditText
+            android:id="@+id/tv_num"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@color/White"
+            android:hint="A10074"
+            android:maxLines="1"
+            android:lines="1"
+            android:singleLine="true"
+            android:maxLength="8"
+            android:imeOptions="actionDone"
+            android:textSize="20dp"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="立即查找"
+        android:textSize="20dp"
+        android:layout_marginTop="50dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_notice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="30dp"
+        android:textColor="@color/Red"
+        />
+
+</LinearLayout>

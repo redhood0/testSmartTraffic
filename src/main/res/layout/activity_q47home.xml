@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <include
+        android:id="@+id/toolss"
+        layout="@layout/toolbar_main" app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_rq"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintTop_toTopOf="@+id/toolss"
+        app:layout_constraintBottom_toBottomOf="@+id/toolss"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="100dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_myorder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/toolss"
+        app:layout_constraintBottom_toBottomOf="@+id/toolss"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="20dp"
+        android:text="我的订单"
+        android:textColor="@color/White"
+
+        />
+
+
+<!--    <LinearLayout-->
+<!--        -->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="800dp"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/toolss"-->
+<!--        android:background="#F1DBDB"></LinearLayout>-->
+
+    <FrameLayout
+        android:id="@+id/fm"
+        android:layout_width="match_parent"
+        android:layout_height="999dp"
+        app:layout_constraintTop_toBottomOf="@+id/toolss">
+
+
+    </FrameLayout>
+
+</android.support.constraint.ConstraintLayout>

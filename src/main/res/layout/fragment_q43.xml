@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:padding="20dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/car1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            />
+        <TextView
+            android:id="@+id/tv_name1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1号小车"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/img1"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="剩余金额： 80元"
+            app:layout_constraintTop_toBottomOf="@id/tv_name1"
+            app:layout_constraintLeft_toRightOf="@id/img1"
+            android:id="@+id/tv_money_before"        />
+
+        <Button
+            android:id="@+id/btn_add1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="充值"
+            android:layout_marginRight="40dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+    </android.support.constraint.ConstraintLayout>
+    <View android:layout_width="match_parent"
+        android:layout_height="1dp" android:background="#000000"/>
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:padding="20dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/img2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/car1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            />
+        <TextView
+            android:id="@+id/tv_name2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2号小车"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/img2"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="剩余金额： 80元"
+            app:layout_constraintTop_toBottomOf="@id/tv_name2"
+            app:layout_constraintLeft_toRightOf="@id/img2"
+            android:id="@+id/tv_money_before2"        />
+
+        <Button
+            android:id="@+id/btn_add2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="充值"
+            android:layout_marginRight="40dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+    </android.support.constraint.ConstraintLayout>
+    <View android:layout_width="match_parent"
+        android:layout_height="1dp" android:background="#000000"/>
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:padding="20dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/img3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/car1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            />
+        <TextView
+            android:id="@+id/tv_name3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3号小车"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/img3"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="剩余金额： 80元"
+            app:layout_constraintTop_toBottomOf="@id/tv_name3"
+            app:layout_constraintLeft_toRightOf="@id/img3"
+            android:id="@+id/tv_money_before3"        />
+
+        <Button
+            android:id="@+id/btn_add3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="充值"
+            android:layout_marginRight="40dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+    </android.support.constraint.ConstraintLayout>
+    <View android:layout_width="match_parent"
+        android:layout_height="1dp" android:background="#000000"/>
+
+
+
+</LinearLayout>

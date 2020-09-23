@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.haibin.calendarview.CalendarView
+        android:id="@+id/cv"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="400dp"
+        android:layout_height="match_parent"/>
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="趁车日期："
+        app:layout_constraintLeft_toRightOf="@+id/cv"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="30dp"
+        />
+    <TextView
+        android:id="@+id/tv_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2018-04-03,"
+        app:layout_constraintLeft_toRightOf="@+id/cv"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title"
+        android:textSize="30dp"
+        />
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:background="#2196F3"
+        android:text="下一步"
+        android:layout_marginTop="200dp"
+        android:layout_marginRight="100dp"
+        android:textColor="@color/White"
+        app:layout_constraintTop_toBottomOf="@+id/tv_data"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+</android.support.constraint.ConstraintLayout>

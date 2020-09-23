@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="50dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/q8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="q8" />
+
+        <Button
+            android:id="@+id/q9"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="q9" />
+
+        <Button
+            android:id="@+id/q10"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="q10" />
+
+        <Button
+            android:id="@+id/q11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="q11" />
+
+        <Button
+            android:id="@+id/q64"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="q64" />
+
+        <Button
+            android:id="@+id/q63"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="q63" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="50dp"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/q62"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="q62" />
+
+        <Button
+            android:id="@+id/q61"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="q61" />
+
+        <Button
+            android:id="@+id/q60"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="q60" />
+
+        <Button
+            android:id="@+id/q59"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="q59" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="50dp"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/q58"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="q58" />
+
+        <Button
+            android:id="@+id/q57"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="q57" />
+
+        <Button
+            android:id="@+id/q56"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="q56" />
+        <Button
+            android:id="@+id/q55"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="q55" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="50dp"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/q54"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="q54" />
+
+        <Button
+            android:id="@+id/q53"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="q53" />
+
+        <Button
+            android:id="@+id/q52"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="q52" />
+        <Button
+            android:id="@+id/q51"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="q51" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="50dp"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/q50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="q50" />
+
+        <Button
+            android:id="@+id/q49"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="q49" />
+
+        <Button
+            android:id="@+id/q48"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="q48" />
+        <Button
+            android:id="@+id/q47"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="q47" />
+        <Button
+            android:id="@+id/q46"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="q46(没做)" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="50dp"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/q45"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="q45" />
+
+        <Button
+            android:id="@+id/q44"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="q44-登陆题" />
+
+        <Button
+            android:id="@+id/q43"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="q43" />
+        <Button
+            android:id="@+id/q42"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="q42" />
+        <Button
+            android:id="@+id/q41"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="q41" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="50dp"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/q40"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="q40" />
+
+        <Button
+            android:id="@+id/q39"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="q39" />
+
+        <Button
+            android:id="@+id/q38"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="q38" />
+        <Button
+            android:id="@+id/q37"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="q37" />
+        <Button
+            android:id="@+id/q36"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="q36" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="50dp"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/q35"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="q35" />
+
+        <Button
+            android:id="@+id/q34"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="q34" />
+
+        <Button
+            android:id="@+id/q33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="q33" />
+        <Button
+            android:id="@+id/q32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="q32" />
+        <Button
+            android:id="@+id/q31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="q31" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="50dp"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/q30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="q30" />
+
+        <Button
+            android:id="@+id/q29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="q29" />
+
+        <Button
+            android:id="@+id/q28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="q28" />
+        <Button
+            android:id="@+id/q27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="q27" />
+        <Button
+            android:id="@+id/q26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="q26" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="50dp"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/q25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="q25" />
+
+        <Button
+            android:id="@+id/q24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="q24" />
+
+        <Button
+            android:id="@+id/q23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="q23" />
+        <Button
+            android:id="@+id/q22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="q22" />
+        <Button
+            android:id="@+id/q21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="q21" />
+
+    </LinearLayout>
+</LinearLayout>

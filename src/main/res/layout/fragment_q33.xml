@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="最新\n公告"
+            android:textSize="30dp" />
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@mipmap/sound_1" />
+        <!--    进出口银行再次融资支持印尼万隆高速公路项目,记者8日从中国进出口银行获悉，进出口银行日前与印度尼西亚财政部签署贷款协议，将给予万隆高速公路三期项目融资支持。此前，进出口银行已支持了万隆高速公路一、二期项目。\r\n\r\n　　据介绍，万隆高速公路项目连接印尼的万隆市和西爪哇省国际机场，总长60公里，属于印尼国家经济建设优先发展项目。\r\n\r\n　　万隆高速公路建成后将有效改善西爪哇岛交通网络，缓解所在地交通拥堵压力，便利沿线物资运输和人员往来，带动当地经济社会发展。( 来源: 中国公路网 )-->
+        <!--        <TextView-->
+        <!--            android:id="@+id/tv_notice"-->
+        <!--            android:layout_width="800dp"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:ellipsize="marquee"-->
+        <!--            android:focusable="true"-->
+        <!--            android:focusableInTouchMode="true"-->
+        <!--            android:paddingRight="50dp"-->
+        <!--            android:singleLine="true"-->
+        <!--            android:text="进出口银行再次融资支持印尼万隆高速公路项目,记者8日从中国进出口银行获悉，进出口银行日前与印度尼西亚财政部签署贷款协议，将给予万隆高速公路三期项目融资支持。此前，进出口银行已支持了万隆高速公路一、二期项目。\r\n\r\n　　据介绍，万隆高速公路项目连接印尼的万隆"-->
+        <!--            android:textSize="40dp" />-->
+
+        <TextView
+            android:id="@+id/marquee"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:singleLine="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:text="省海高速胶州、莱西服务器封闭施工通知1111111111111111111111111111111"
+            android:textSize="60dp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/Black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="200dp"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_height="wrap_content"
+            android:text="吴蓉高速1111111111"
+            android:textSize="40dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="400dp"
+            android:text="正常"
+            android:textSize="40dp" />
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@mipmap/arrow_right" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/Black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="吴蓉高速"
+            android:textSize="40dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="400dp"
+            android:text="正常"
+            android:textSize="40dp" />
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@mipmap/arrow_right" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/Black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="吴蓉高速"
+            android:textSize="40dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="400dp"
+            android:text="正常"
+            android:textSize="40dp" />
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@mipmap/arrow_right" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/Black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="吴蓉高速"
+            android:textSize="40dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="400dp"
+            android:text="正常"
+            android:textSize="40dp" />
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@mipmap/arrow_right" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/Black" />
+</LinearLayout>

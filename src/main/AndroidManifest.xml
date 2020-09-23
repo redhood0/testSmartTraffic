@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lenovo.smarttraffic">
+
+    <!-- 允许程序设置内置sd卡的写权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 允许程序获取网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <!-- 允许程序访问WiFi网络信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 允许程序读写手机状态和身份 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="LOCAT" />
+    <!-- 允许程序访问CellID或WiFi热点来获取粗略的位置 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 用于访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 用于申请调用A-GPS模块 -->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <!-- 用于申请获取蓝牙信息进行室内定位 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:name=".InitApp"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <service android:name=".ui.zujian.MyNetWorkService" />
+
+        <activity
+            android:name=".SplashActivity"
+            android:configChanges="orientation|screenSize|uiMode"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBar">
+                        <intent-filter>
+                            <action android:name="android.intent.action.MAIN" />
+                            <action android:name="android.intent.action.VIEW" />
+                            <category android:name="android.intent.category.LAUNCHER" />
+                        </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation|screenSize|uiMode"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".ui.activity.LoginActivity"
+            android:label="@string/login"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".ui.activity.Item1Activity"
+            android:configChanges="orientation|screenSize|uiMode"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".ui.activity.Item2Activity"
+            android:configChanges="orientation|screenSize|uiMode"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".ui.activity.RegisterActivity"
+            android:configChanges="orientation|screenSize|uiMode"
+            android:label="注册"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".ui.activity.AccountActivity"
+            android:configChanges="orientation|screenSize|uiMode"
+            android:label="我的账户"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.activity.TrafficeLightControllActivity"
+            android:configChanges="orientation|screenSize|uiMode"
+            android:label="我的账户"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".ui.activity.BillControllActivity"
+            android:configChanges="orientation|screenSize|uiMode"
+            android:label="账单管理"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".ui.activity.Q4Activity"
+            android:configChanges="orientation|screenSize|uiMode"
+            android:label="账单管理"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".ui.activity.VedioActivity"
+            android:configChanges="orientation|screenSize|uiMode"
+            android:label="vedio"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".ui.activity.ImageActivity"
+            android:configChanges="orientation|screenSize|uiMode"
+            android:label="img"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.activity.Q5Activity"
+            android:configChanges="orientation|screenSize|uiMode"
+            android:label="img"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.activity.CartTestActivity"
+            android:configChanges="orientation|screenSize|uiMode"
+            android:label="img"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.activity.Q6Activity"
+            android:configChanges="orientation|screenSize|uiMode"
+            android:label="img"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".ui.activity.Q7Activity"
+            android:configChanges="orientation|screenSize|uiMode"
+            android:label="img"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.activity.Item11Activity"
+            android:configChanges="orientation|screenSize|uiMode"
+            android:label="img"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.activity.Q8Activity"
+            android:configChanges="orientation|screenSize|uiMode"
+            android:label="img"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".ui.activity.Q10Activity"
+            android:configChanges="orientation|screenSize|uiMode"
+            android:label="img"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.activity.Q64Activity"
+            android:configChanges="orientation|screenSize|uiMode"
+            android:label="img"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".ui.activity.Q64ChongZhiActivity"
+            android:configChanges="orientation|screenSize|uiMode"
+            android:label="img"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".ui.activity.Q64ChongzhiAcctivity2"
+            android:configChanges="orientation|screenSize|uiMode"
+            android:label="img"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".bean.Q64_2_1Activity"
+            android:configChanges="orientation|screenSize|uiMode"
+            android:label="img"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".ui.activity.Q63Activity"
+            android:configChanges="orientation|screenSize|uiMode"
+            android:label="img"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".ui.activity.Q63DetailActivity"
+            android:configChanges="orientation|screenSize|uiMode"
+            android:label="img"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".ui.activity.Q63ShopCartActivity"
+            android:configChanges="orientation|screenSize|uiMode"
+            android:label="img"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".ui.activity.Q63PayActivity"
+            android:configChanges="orientation|screenSize|uiMode"
+            android:label="img"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".ui.activity.Q62Activity"
+            android:configChanges="orientation|screenSize|uiMode"
+            android:label="img"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".ui.activity.Q61HomeActivity"
+            android:configChanges="orientation|screenSize|uiMode"
+            android:label="img"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.activity.Q55Activity"
+            android:configChanges="orientation|screenSize|uiMode"
+            android:label="img"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.activity.Q51Activity"
+            android:configChanges="orientation|screenSize|uiMode"
+            android:label="img"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".ui.activity.Q47HomeActivity"
+            android:configChanges="orientation|screenSize|uiMode"
+            android:label="img"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".ui.activity.Q45Activity"
+            android:configChanges="orientation|screenSize|uiMode"
+            android:label="img"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".ui.activity.TestGesture"
+            android:configChanges="orientation|screenSize|uiMode"
+            android:label="img"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".ui.activity.Question21To1Activity"
+            android:configChanges="orientation|screenSize|uiMode"
+            android:label="img"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".ui.activity.Q10ActivityHome"
+            android:configChanges="orientation|screenSize|uiMode"
+            android:label="img"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.activity.Q9ActivityHome"
+            android:configChanges="orientation|screenSize|uiMode"
+            android:label="img"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+        android:name=".ui.activity.Q8ActivityHome"
+        android:configChanges="orientation|screenSize|uiMode"
+        android:label="img"
+        android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".ui.activity.Q7ActivityHome"
+            android:configChanges="orientation|screenSize|uiMode"
+            android:label="img"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".ui.activity.Q6ActivityHome"
+            android:configChanges="orientation|screenSize|uiMode"
+            android:label="img"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".ui.activity.NewActivity921"
+            android:configChanges="orientation|screenSize|uiMode"
+            android:label="img"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!--离线地图key-->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="bdc9db56ef3f82cb64db5c8212f0dddf" />
+
+    </application>
+
+</manifest>

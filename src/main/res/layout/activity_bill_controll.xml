@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <include android:id="@+id/toobal" layout="@layout/toolbar_main"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="账单记录"
+            android:textSize="30dp"
+            ></TextView>
+        <Spinner
+            android:id="@+id/sp_time_order"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:minWidth="300dp"
+
+            ></Spinner>
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查询"
+            ></Button>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="现在还没有数据"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:visibility="gone"
+        ></TextView>
+    <GridView
+        android:id="@+id/gv_recoder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:numColumns="5"
+        android:verticalSpacing="1dp"
+        android:horizontalSpacing="1dp"
+        android:background="@color/Black"
+        ></GridView>
+
+</LinearLayout>

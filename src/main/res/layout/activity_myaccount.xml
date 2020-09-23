@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_main" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="账户余额："
+            android:textSize="70dp"></TextView>
+
+        <TextView
+            android:id="@+id/tv_money"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100元"
+
+            android:textSize="70dp"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="车号："
+
+            android:textSize="70dp"></TextView>
+
+        <Spinner
+            android:id="@+id/sp_account"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@color/Green"
+            android:dropDownWidth="400dp"
+            android:dropDownSelector="@mipmap/login"
+            android:entries="@array/car_choose"
+            android:spinnerMode="dropdown"></Spinner>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="充值金额："
+            android:textSize="70dp"></TextView>
+
+        <EditText
+            android:id="@+id/et_addmoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="100"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:maxLength="3"
+            android:textSize="70dp"></EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="元"
+            android:textSize="70dp"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="查询"
+            android:textSize="50dp"></Button>
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="充值"
+            android:textSize="50dp"></Button>
+    </LinearLayout>
+
+</LinearLayout>

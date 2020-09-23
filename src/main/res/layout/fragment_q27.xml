@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="50dp">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="室外空气指数"
+        android:textSize="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="50dp"
+        app:layout_constraintLeft_toLeftOf="@+id/title"
+        app:layout_constraintTop_toBottomOf="@+id/title">
+
+        <TextView
+            android:id="@+id/tv_pm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PM2.5:300"
+            android:textSize="20dp"></TextView>
+
+        <TextView
+            android:id="@+id/tv_wendu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="温度:20"
+            android:textSize="20dp"></TextView>
+
+        <TextView
+            android:id="@+id/tv_shidu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="湿度:67%"
+            android:textSize="20dp"></TextView>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_1"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="50dp"
+        android:src="@mipmap/icon_co2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll" />
+
+    <TextView
+        android:id="@+id/style1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="强"
+        android:textColor="@color/Red"
+        android:textSize="20dp"
+        app:layout_constraintLeft_toRightOf="@+id/iv_1"
+        app:layout_constraintTop_toTopOf="@+id/iv_1" />
+
+    <TextView
+        android:id="@+id/detial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="外出需涂抹中倍数防护霜"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_1"
+        app:layout_constraintLeft_toRightOf="@+id/iv_1" />
+
+    <ImageView
+        android:id="@+id/iv_2"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginLeft="30dp"
+        android:src="@mipmap/icon_co2"
+        app:layout_constraintLeft_toRightOf="@+id/detial"
+        app:layout_constraintTop_toTopOf="@+id/iv_1" />
+
+    <TextView
+        android:id="@+id/style2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="良好"
+        android:textSize="20dp"
+        app:layout_constraintLeft_toRightOf="@+id/iv_2"
+        app:layout_constraintTop_toTopOf="@+id/iv_2" />
+
+    <TextView
+        android:id="@+id/detial2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="气候影响对诚联响应不大"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_2"
+        app:layout_constraintLeft_toRightOf="@+id/iv_2" />
+
+</android.support.constraint.ConstraintLayout>

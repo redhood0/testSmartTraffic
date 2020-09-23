@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:id="@+id/tv_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:textSize="30dp"
+        android:text="111"
+        android:textAlignment="center"
+        android:gravity="center_vertical"
+        ></TextView>
+<!--    <View-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0.5dp"-->
+<!--        android:background="@color/Black"-->
+<!--        ></View>-->
+</LinearLayout>

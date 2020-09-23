@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include
+        android:id="@+id/toobal4user"
+        layout="@layout/toolbar_main" />
+    <TextView
+        android:id="@+id/tv_recoder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="充值记录"
+        app:layout_constraintTop_toTopOf="@+id/toobal4user"
+        app:layout_constraintRight_toRightOf="@+id/toobal4user"
+        app:layout_constraintBottom_toBottomOf="@+id/toobal4user"
+        android:layout_marginRight="30dp"
+        />
+    <TextView
+        android:id="@+id/tv_piliang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="批量充值"
+        app:layout_constraintTop_toTopOf="@+id/toobal4user"
+        app:layout_constraintRight_toLeftOf="@+id/tv_recoder"
+        app:layout_constraintBottom_toBottomOf="@+id/toobal4user"
+        android:layout_marginRight="30dp"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/toobal4user"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+</android.support.constraint.ConstraintLayout>
